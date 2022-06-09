@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+.row{
+    display: flex;
+    padding: 5px ;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.colum{
+    flex: 25%;
+    padding: 5px;
+}
+.colum img{
+    margin-top: 5px;
+}
+@media(max-width:880px){
+    .colum {
+        flex: 50%;
+    }
+}
+@media(max-width:600px){
+    .colum {
+        flex: 100%;
+    }
+}
