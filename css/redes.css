@@ -36,6 +36,10 @@
 body{
     background-color: #ffffff;
 }
+iframe{
+    width: 90%;
+    height: 90vh;
+}
 .pie-pagina{
     width: 100%;
     background-color: #010203;
