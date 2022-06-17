@@ -1,3 +1,8 @@
+<?php
+    include 'include/conexion.php';
+    $link = conectarse();
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,9 +64,6 @@
                 </ul>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <?php
-                        include 'include/conexion.php';
-                        $link = conectarse();
-                        session_start();
                         if(!isset($_SESSION['username']))
                         {
                             echo '  <li class="nav-item">
@@ -311,6 +313,10 @@
                 <p>Gmail: EurekaExpedition@gmail.com</p>
                 <p>Celular: +51 974 706 919</p>
                 <p>Ubicaion: Ollantaytambo-Urubamba-Cusco</p>
+                <a href="manualusuario.php">Manual de usuario</a>
+                <style>
+                    a{text-decoration: none; color: red;}
+                </style>
                 <p></p>
             </div>
             <div class="box">
@@ -324,9 +330,9 @@
             </div>
         </div>
         <div class="grupo-2">
-            <small>&copy; 2022 <b>Autores</b> - Joel Wenceslao Bejar Espinoza -Julio César Maza García -Miguel Adriano
-                Florez Mejia
-                -Edy nestor fuentes avilés</small>
+            <small>
+                &copy; 2022 <b>Autores</b> - Joel Wenceslao Bejar Espinoza - Julio César Maza García - Miguel Adriano Florez Mejia - Edy nestor fuentes avilés
+            </small>
         </div>
     </footer>
 

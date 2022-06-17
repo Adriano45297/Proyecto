@@ -1,3 +1,8 @@
+<?php
+    include 'include/conexion.php';
+    $link = conectarse();
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,9 +66,6 @@
                 </ul>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <?php
-                        include 'include/conexion.php';
-                        $link = conectarse();
-                        session_start();
                         if(!isset($_SESSION['username']))
                         {
                             echo '  <li class="nav-item">
@@ -185,18 +187,12 @@
                 Consideraciones: Se requiere un permiso de ingreso (Alpaca Expeditions lo obtendrá por usted en cuanto
                 reserve con nosotros). Se requiere reservar con anticipación.
             </p>
-            <a href="#" class="btn btn-primary">Reservar paquete a $60.00</a>
+            <a href="reservar.php" class="btn btn-primary">Reservar paquete a $60.00</a>
         </div>
         <div class="card-footer text-muted">
             Duracion 4 horas
         </div>
     </div>
-
-
-
-
-
-
 
     <footer class="pie-pagina">
         <div class="grupo-1">
@@ -212,6 +208,10 @@
                 <p>Gmail: EurekaExpedition@gmail.com</p>
                 <p>Celular: +51 974 706 919</p>
                 <p>Ubicaion: Ollantaytambo-Urubamba-Cusco</p>
+                <a href="manualusuario.php">Manual de usuario</a>
+                <style>
+                    a{text-decoration: none; color: red;}
+                </style>
                 <p></p>
             </div>
             <div class="box">
@@ -225,19 +225,11 @@
             </div>
         </div>
         <div class="grupo-2">
-            <small>&copy; 2022 <b>Autores</b> - Joel Wenceslao Bejar Espinoza -Julio César Maza García -Miguel Adriano
-                Florez Mejia
-                -Edy nestor fuentes avilés</small>
+            <small>
+                &copy; 2022 <b>Autores</b> - Joel Wenceslao Bejar Espinoza - Julio César Maza García - Miguel Adriano Florez Mejia - Edy nestor fuentes avilés
+            </small>
         </div>
     </footer>
-
-
-
-
-
-
-
-
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

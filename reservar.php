@@ -176,6 +176,10 @@
                 <p>Gmail: EurekaExpedition@gmail.com</p>
                 <p>Celular: +51 974 706 919</p>
                 <p>Ubicaion: Ollantaytambo-Urubamba-Cusco</p>
+                <a href="manualusuario.php">Manual de usuario</a>
+                <style>
+                    a{text-decoration: none; color: red;}
+                </style>
                 <p></p>
             </div>
             <div class="box">
@@ -189,9 +193,9 @@
             </div>
         </div>
         <div class="grupo-2">
-            <small>&copy; 2022 <b>Autores</b> - Joel Wenceslao Bejar Espinoza -Julio César Maza García -Miguel Adriano
-                Florez Mejia
-                -Edy nestor fuentes avilés</small>
+            <small>
+                &copy; 2022 <b>Autores</b> - Joel Wenceslao Bejar Espinoza - Julio César Maza García - Miguel Adriano Florez Mejia - Edy nestor fuentes avilés
+            </small>
         </div>
     </footer>
         <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>

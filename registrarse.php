@@ -78,7 +78,7 @@
                 <div class="col-sm-4">
                     <div class="form-group">
                         <label>Celular: </label>
-                        <input type="text" class="form-control" placeholder="Ingrese su celular" name="txtcelular" required>
+                        <input type="text" class="form-control" placeholder="Ingrese su celular" name="txtcelular" required maxlength="15">
                     </div>
                 </div>
                 <div class="col-sm-12">
@@ -93,7 +93,7 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label>Usuario: </label>
-                        <input type="text" class="form-control" placeholder="Ingrese su nombre de usuario" name="txtusuario" required>
+                        <input type="text" class="form-control" placeholder="Ingrese su nombre de usuario" name="txtusuario" required maxlength="5">
                     </div>
                 </div>
                 <div class="col-sm-6">
